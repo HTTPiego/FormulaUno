@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+application {
+    mainClass = 'it.unicam.cs.pa2021.formulaUno.MainFX'
+}
+
+run{
+    standardInput = System.in
+}
+
+
+group 'it.unicam.cs.pa2021.formulaUno'
+version '1.0-SNAPSHOT'
+
+javafx {
+    version = "11.0.2"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}

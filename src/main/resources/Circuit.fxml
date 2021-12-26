@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane prefHeight="468.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.pa2021.formulaUno.fxmlController">
+   <children>
+      <TextArea fx:id="messagges" layoutX="1.0" layoutY="49.0" prefHeight="39.0" prefWidth="600.0" />
+      <HBox layoutX="128.0" layoutY="14.0" prefHeight="26.0" prefWidth="346.0" spacing="10.0">
+         <children>
+            <Button fx:id="newGame" mnemonicParsing="false" onAction="#newGameHandle" text="newGame" />
+            <Button fx:id="nextTurn" mnemonicParsing="false" onAction="#nextTurnHandle" text="nextTurn" />
+            <Button fx:id="driversStatus" mnemonicParsing="false" onAction="#driversStatusHandle" text="driversStatus" />
+            <Button fx:id="classification" mnemonicParsing="false" onAction="#classificationHandle" text="classification" />
+         </children>
+      </HBox>
+      <StackPane fx:id="circuitPane" layoutX="118.0" layoutY="123.0" prefHeight="301.0" prefWidth="366.0" />
+   </children>
+</AnchorPane>
